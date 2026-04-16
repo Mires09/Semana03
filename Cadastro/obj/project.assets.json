@@ -81,11 +81,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/Semana03/cadastro/laço.csproj",
+      "projectUniqueName": "/workspaces/Semana03/Cadastro/laço.csproj",
       "projectName": "laço",
-      "projectPath": "/workspaces/Semana03/cadastro/laço.csproj",
+      "projectPath": "/workspaces/Semana03/Cadastro/laço.csproj",
       "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/Semana03/cadastro/obj/",
+      "outputPath": "/workspaces/Semana03/Cadastro/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/codespace/.nuget/NuGet/NuGet.Config"

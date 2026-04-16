@@ -2,6 +2,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.UseUrls("http://0.0.0.0:8000");
 
+// Mantém o nome das propriedades com letra maiúscula no JSON (PascalCase)
+builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =>
+{
+    options.SerializerOptions.PropertyNamingPolicy = null;
+});
+
 var app = builder.Build();
 
 Funcionario[] funcionarios = new Funcionario[100];
@@ -9,7 +15,7 @@ int totalFuncionarios = 0;
 
 app.MapGet("/", () => "API de funcionários em execução ...");
 
-//Cadastrar funcionário
+// Cadastrar funcionário
         app.MapGet("/funcionarios/{nome}/{idade}/{cargo}/{departamento}",
         (string nome, int idade, string cargo, string departamento) =>
     {
@@ -28,10 +34,10 @@ app.MapGet("/", () => "API de funcionários em execução ...");
 
         return Results.Ok(new
         {
-            nome = f.GetNome(),
-            idade = f.GetIdade(),
-            cargo = f.GetCargo(),
-            departamento = f.GetDepartamento()
+            Nome = f.GetNome(),
+            Idade = f.GetIdade(),
+            Cargo = f.GetCargo(),
+            Departamento = f.GetDepartamento()
         });
     });
 
@@ -45,10 +51,10 @@ app.MapGet("/", () => "API de funcionários em execução ...");
         var f = funcionarios[i];
         lista.Add(new
         {
-            nome = f.GetNome(),
-            idade = f.GetIdade(),
-            cargo = f.GetCargo(),
-            departamento = f.GetDepartamento()
+            Nome = f.GetNome(),
+            Idade = f.GetIdade(),
+            Cargo = f.GetCargo(),
+            Departamento = f.GetDepartamento()
         });
     }
 
@@ -56,11 +62,3 @@ app.MapGet("/", () => "API de funcionários em execução ...");
 });
 
 app.Run();
-
-git rm -r cadastro
-git commit -m "Remove pasta cadastro duplicada"
-git push
-
-git rm -r --cached cadastro
-git commit -m "Remove pasta cadastro duplicada"
-git push

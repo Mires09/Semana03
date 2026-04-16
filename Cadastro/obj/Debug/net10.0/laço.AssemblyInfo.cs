@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("laço")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2745c34c0b9d21aae7b716dff289e7154f510482")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45fa7c329804563ccd6d7b204f840f43565a6af7")]
 [assembly: System.Reflection.AssemblyProductAttribute("laço")]
 [assembly: System.Reflection.AssemblyTitleAttribute("laço")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
