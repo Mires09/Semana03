@@ -56,3 +56,11 @@ app.MapGet("/", () => "API de funcionários em execução ...");
 });
 
 app.Run();
+
+git rm -r cadastro
+git commit -m "Remove pasta cadastro duplicada"
+git push
+
+git rm -r --cached cadastro
+git commit -m "Remove pasta cadastro duplicada"
+git push
