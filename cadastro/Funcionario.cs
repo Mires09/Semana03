@@ -5,43 +5,35 @@ public class Funcionario
     private string? cargo;
     private string? departamento;
 
-    public string GetNome()
-    {
+    public string GetNome(){
         return nome;
     }
 
-    public void SetNome(string nome)
-    {
+    public void SetNome(string nome){
         this.nome = nome;
     }
 
-    public int GetIdade()
-    {
+    public int GetIdade(){
         return idade;
     }
 
-    public void SetIdade(int idade)
-    {
+    public void SetIdade(int idade){
         this.idade = idade;
     }
 
-    public string GetCargo()
-    {
+    public string GetCargo(){
         return cargo;
     }
 
-    public void SetCargo(string cargo)
-    {
+    public void SetCargo(string cargo){
         this.cargo = cargo;
     }
 
-    public string GetDepartamento()
-    {
+    public string GetDepartamento(){
         return departamento;
     }
 
-    public void SetDepartamento(string departamento)
-    {
+    public void SetDepartamento(string departamento){
         this.departamento = departamento;
     }
 }
